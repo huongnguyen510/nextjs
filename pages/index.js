@@ -1,22 +1,38 @@
-import Head from 'next/head'
-import '@fortawesome/fontawesome-free/css/all.min.css';
-import '../node_modules/font-awesome/css/font-awesome.min.css'; 
+import Head from 'next/head';
+import Header from '../templates/layout/header'
+import Sidebar from '../templates/layout/sidebar'
+import ShowHome from "../templates/components/box-home";
+import ShowAbout from "../templates/components/box-about";
+import ShowService from "../templates/components/box-service";
+import ShowPortfolio from "../templates/components/box-portfolio";
+import ShowTestimonial from "../templates/components/box-testimonial";
+import ShowBlog from "../templates/components/box-blog";
+import ShowContact from "../templates/components/box-contact";
+
+import { BoxHome, BoxAbout, BoxService, BoxPortfolio, BoxTestimonial, BoxBlog, BoxContact } from "../api-data/profile";
 
 export default function Home() {
   return (
-    <div className='site'>
+    <>
       <Head>
         <title>Huong Nguyen</title>
-        <meta name="description" content="Huong Nguyen" />
+        <meta name="description" content="My CV" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='main'>
-        <div className='container'>
-          <h1>
-            Welcome to my CV
-          </h1>
+
+      <body className="content">
+        <Header />
+        <Sidebar />
+        <div className="content">
+          <ShowHome databoxhome={BoxHome} />
+          <ShowAbout databoxabout={BoxAbout} />
+          <ShowService databoxservice={BoxService} />
+          <ShowPortfolio databoxportfolio={BoxPortfolio} />
+          <ShowTestimonial databoxtestimonial={BoxTestimonial} />
+          <ShowBlog databoxblog={BoxBlog} />
+          <ShowContact databoxcontact={BoxContact} />
         </div>
-      </main>
-    </div>
+      </body>
+    </>
   )
 }

@@ -20,7 +20,7 @@ function ShowContact({ databoxcontact = [] }) {
                 </div>
                 <div className="contactform__content">
                   <h3>{icon.title}</h3>
-                  <p>{infor}</p>
+                  <p>{icon.infor}</p>
                 </div>
               </div>
             </div>

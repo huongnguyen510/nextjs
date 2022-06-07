@@ -7,24 +7,24 @@ export const BoxHome = {
 	introduction: "I'm a Freelancer Front-end React Developer based In USA, over 6 years of professional experience.",
 	socials: [
 		{
-			icon: 'images/facebook.png',
+			icon: 'images/icon-facebook.png',
 			link: "https://www.facebook.com/"
 		},
 		{
-			icon: 'images/twitter.png',
+			icon: 'images/icon-twitter.png',
 			link: "https://twitter.com/"
 		},
 		{
-			icon: 'images/instagram.png',
+			icon: 'images/icon-instagram.png',
 			link: "https://www.instagram.com/"
 		},
 		{
-			icon: 'images/dribbble.png',
+			icon: 'images/icon-dribbble.png',
 			link: "https://dribbble.com/"
 		},
 		{
-			icon: 'images/linkedin.png',
-			link: "https://www.linkedin.com/feed/"
+			icon: 'images/icon-linkedin.png',
+			link: "https://www.linkedin.com/"
 		},
 	],
 	button: "Download CV"
@@ -120,8 +120,8 @@ export const BoxPortfolio = {
 	]
 };
 
-// Box Testimonials
-export const BoxTestimonials = {
+// Box Testimonial
+export const BoxTestimonial = {
 
 	boxtitle: "Testimonial",
 	description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ipsum sit nibh amet egestas tellus.",
